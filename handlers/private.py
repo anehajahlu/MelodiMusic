@@ -9,11 +9,11 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("AAMCBQADGQEAAQlEyGBzdiUGDPFCJMnfvxV6M7ry3_O8AAJaAgACBjGpVsrLEMler1z4-4b_cHQAAwEAB20AAzYDAAIeBA")
     await message.reply_text(
-        f"""**Haiiiii Gays {bn} 🎵
+        f"""**Yuhuuuu Guys {bn} 🎵
 
-Saya bisa memutar musik di panggilan suara grup Anda. Dikembangkan Oleh [Vckyyy](https://t.me/VckyouuBitch).
+Saya bisa memutar musik di panggilan suara grup Anda. Dikembangkan Oleh [Toni](https://t.me/BluueBlueSky).
 
-Tambahkan saya ke grup Anda dengan cara salin username saya lalu invite, jangan lupa invite juga @GeezMusicAssitant dan nikmati musik yang kami mulai dengan bebas!**
+Tambahkan saya ke grup Anda dengan cara salin username saya lalu invite. jangan lupa invite @MelodiAssistantBot dan nikmati musik dengan bebas!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -22,14 +22,14 @@ Tambahkan saya ke grup Anda dengan cara salin username saya lalu invite, jangan 
                         "🛠 Klik Disini Untuk Penjelasan Printah", url="https://telegra.ph/text-04-11-2")
                   ],[
                     InlineKeyboardButton(
-                        "✨ Pemilik", url="https://t.me/VckyouuBitch"
+                        "🐝 Pemilik", url="https://t.me/BluueBlueSky"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Vckyouuu"
+                        "🔊 Channel", url="https://t.me/CandaAnda"
                     )
                  ],[ 
                     InlineKeyboardButton(
-                        "⚡Tambahkan Bot Ini Ke Group Anda⚡", url="https://t.me/GeezMusic?startgroup=true"
+                        "⚡Tambahkan Ke Grup Anda⚡", url="https://t.me/MelodiMusic?startgroup=true"
                     )]
             ]
         ),
@@ -38,12 +38,12 @@ Tambahkan saya ke grup Anda dengan cara salin username saya lalu invite, jangan 
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Group Music Player Online ✅**""",
+      await message.reply_text("""**Melodi Music Player Online ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Vckyouuu")
+                        "🔊 Channel", url="https://t.me/CandaAnda")
                 ]
             ]
         )
