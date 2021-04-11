@@ -61,8 +61,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Tonton Di YouTube 🎬",
-                        url=f"{url}")
+                        text="💭 Join Channel Quotes",
+                        url="https://t.me/CandaAnda")
                    
                 ]
             ]
@@ -72,8 +72,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Tonton Di YouTube 🎬",
-                        url=f"{url}")
+                        text="💭 Join Channel Quotes",
+                        url="https://t.me/CandaAnda")
                    
                 ]
             ]
