@@ -21,7 +21,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Tidak ada yang sedang diputar!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ Dijeda!")
+        await message.reply_text("🎼 Musik Dijeda!")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -36,7 +36,7 @@ async def resume(_, message: Message):
         await message.reply_text("❗ Tidak ada yang dijeda!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ Dilanjutkan!")
+        await message.reply_text("🎼 Musik Dilanjutkan!")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -72,4 +72,4 @@ async def skip(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file"]
             )
 
-        await message.reply_text("➡️ Melewati lagu saat ini!")
+        await message.reply_text("➡️ Skip, ganti lagu lain")
