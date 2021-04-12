@@ -18,7 +18,7 @@ from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(command("yt") & other_filters)
+@Client.on_message(command("ytp") & other_filters)
 @errors
 async def play(_, message: Message):
 
@@ -61,8 +61,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="**𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙌𝙐𝙊𝙏𝙀𝙎**",
-                        url="https://t.me/CandaAnda")
+                        text="𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗟𝗲𝗯𝗮𝗵",
+                        url="www.instagram.com/antoniprananda")
                    
                 ]
             ]
@@ -72,8 +72,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="**𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙌𝙐𝙊𝙏𝙀𝙎**",
-                        url="https://t.me/CandaAnda")
+                        text="𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗟𝗲𝗯𝗮𝗵",
+                        url="www.instagram.com/antoniprananda")
                    
                 ]
             ]
