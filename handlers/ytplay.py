@@ -61,7 +61,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="💭 Join Channel Quotes",
+                        text="📣 Join Channel Quotes",
                         url="https://t.me/CandaAnda")
                    
                 ]
@@ -72,7 +72,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="💭 Join Channel Quotes",
+                        text="📣 Join Channel Quotes",
                         url="https://t.me/CandaAnda")
                    
                 ]
@@ -101,7 +101,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="🎼 Music diMulai, Request Dari {} ".format(
+        caption="🎼 Play lagu Request Dari {} ".format(
         message.from_user.mention()
         ),
     )
