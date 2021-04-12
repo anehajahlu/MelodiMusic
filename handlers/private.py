@@ -9,17 +9,17 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAEJRPhgc4wyE8q8DZtwCSzEJn0O5j6l1AACjwIAAkq0mVcKDooD9TgcSx4E")
     await message.reply_text(
-        f"""**Yuhuuuu Guys {bn} 🎵
+        f"""**Yuhuuuu Guys saya {bn} 🎵
 
 Saya bisa memutar musik di panggilan suara grup Anda. Dikembangkan Oleh [Toni](https://t.me/BluueBlueSky).
 
-Tambahkan saya ke grup Anda dengan cara salin username saya lalu invite. jangan lupa invite @MelodiAssistantBot dan nikmati musik dengan bebas!**
+Tambahkan [Melodi Music](https://t.me/MelodiMusicPlayer) dan [Melodi Assistant](https://t.me/MelodiAssistanBot) ke grup Anda, dan nikmati mendengar musik dengan bebas!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Klik Disini Untuk Penjelasan Printah", url="https://telegra.ph/text-04-11-2")
+                        "🛠 Klik Disini Untuk Penjelasan Printah", url="https://telegra.ph/Ultroid-04-12-5")
                   ],[
                     InlineKeyboardButton(
                         "🐝 Pemilik", url="https://t.me/BluueBlueSky"
@@ -29,7 +29,7 @@ Tambahkan saya ke grup Anda dengan cara salin username saya lalu invite. jangan 
                     )
                  ],[ 
                     InlineKeyboardButton(
-                        "⚡Tambahkan Ke Grup Anda⚡", url="https://t.me/MelodiMusic?startgroup=true"
+                        "⚡Follow instagram⚡", url="www.instagram.com/antoniprananda"
                     )]
             ]
         ),
