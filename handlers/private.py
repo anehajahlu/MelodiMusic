@@ -19,7 +19,7 @@ Tambahkan [Melodi Music](https://t.me/MelodiMusicPlayer) dan [Melodi Assistant](
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Klik Disini Untuk Penjelasan Printah", url="https://telegra.ph/Ultroid-04-12-5")
+                        "🛠 Penjelasan Printah", url="https://telegra.ph/text-04-11-2")
                   ],[
                     InlineKeyboardButton(
                         "🐝 Pemilik", url="https://t.me/BluueBlueSky"
