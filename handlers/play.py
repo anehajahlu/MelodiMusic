@@ -19,7 +19,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🎼 Sedang Memprosess...")
+    lel = await message.reply("🎼 **Sedang Memprosess...**")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -27,8 +27,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🔊 Channel",
-                        url="https://t.me/CandaAnda")
+                        text="𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺 𝗟𝗲𝗯𝗮𝗵",
+                        url="www.instagram.com/antoniprananda")
                    
                 ]
             ]
@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
-        await lel.edit(f"🎼 Sedang Dalam Antrian Ke** {position}!")
+        await lel.edit(f"🎼 **Sedang Dalam Antrian Ke** **{position}!**")
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
