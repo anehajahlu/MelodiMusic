@@ -18,11 +18,11 @@ from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(command("ytp") & other_filters)
+@Client.on_message(command("yt") & other_filters)
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎 Menemukan lagu tersebut...")
+    lel = await message.reply("🔎 **Menemukan lagu tersebut...**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -33,7 +33,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎼 Memproses Music...")
+    await lel.edit("🎼 **Memproses Music...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -52,7 +52,7 @@ async def play(_, message: Message):
 
     except Exception as e:
         lel.edit(
-            "❌ Lagu tidak ditemukan.\n\nCoba lagu lain atau mungkin mengejanya dengan benar."
+            "❌ **Lagu tidak ditemukan.**\n\n**Coba lagu lain atau mungkin mengejanya dengan benar.**"
         )
         print(str(e))
         return
@@ -61,7 +61,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="📣 Join Channel Quotes",
+                        text="**𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙌𝙐𝙊𝙏𝙀𝙎**",
                         url="https://t.me/CandaAnda")
                    
                 ]
@@ -72,7 +72,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="📣 Join Channel Quotes",
+                        text="**𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙌𝙐𝙊𝙏𝙀𝙎**",
                         url="https://t.me/CandaAnda")
                    
                 ]
@@ -87,13 +87,13 @@ async def play(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await lel.edit_text("❗ Anda tidak memberi saya apa pun untuk dimainkan!")
+        return await lel.edit_text("❗ **Anda tidak memberi saya apa pun untuk dimainkan!**")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo=thumb_name, 
-        caption=f"🎼 Lagu yang Anda minta Sedang Antri di posisi {position}!",
+        caption=f"🎼 **Lagu yang Anda minta Sedang Antri di posisi** **{position}!**",
         reply_markup=keyboard2)
         return await lel.delete()
     else:
@@ -101,7 +101,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=thumb_name,
         reply_markup=keyboard,
-        caption="🎼 Play lagu Request Dari {} ".format(
+        caption="🎼 **Play lagu request dari** {} ".format(
         message.from_user.mention()
         ),
     )
